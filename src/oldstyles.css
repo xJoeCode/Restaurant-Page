@@ -1,0 +1,33 @@
+body{
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+    font-family: 'Days One', sans-serif;
+}
+
+.intro{
+    margin-top: 120px;
+    background-color: #5e8c31;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    font-size: 0.7rem;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Days One', sans-serif;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+
+.coffeeCards {
+    @apply bg-[#8d4e85] w-48 h-72 m-4 cursor-pointer rounded-md shadow-lg border-4 border-[#006c7f] flex flex-col justify-center text-center items-center
+    }
+    
+}
+
