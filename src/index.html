@@ -5,35 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
-    <script src="./bundle.js"></script>
+    <script defer src="./bundle.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body id="content" class="background bg-lightblue ">
     <div class="flex flex-col items-center">
         <h1 class="relative container text-3xl font-Days_One p-3 cursor-pointer">Wolf Coffee</h1>
-        <div class="container w-4/6 bg-anotherGreen flex flex-col items-center justify-center text-center m-3 rounded-lg  ">
+        <div class="container w-4/6 h-48 bg-anotherGreen flex flex-col items-center justify-center text-center m-3 rounded-lg  ">
             <h1 class="font-Days_One  m-3 tracking-tight">THE WIDEST RANGE OF COFFEES FROM THE WORLD'S BEST FARMS</h1>
             <p class="font-Days_One  ">Fresh, delicious & affordable coffees conveniently delivered to you!</p>
             <div class="container flex flex-col md:flex-row justify-center">
-                <button id="quiz" class="font-Days_One  m-4 p-3 text-center rounded-lg border-[#592b1f] bg-slate-100 hover:bg-[#e97451] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Try Our Coffee Match Quiz</button>
+                <button id="quiz" onclick="coffeeQuiz()" class="font-Days_One  m-4 p-3 text-center rounded-lg border-[#592b1f] bg-slate-100 hover:bg-[#e97451] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Try Our Coffee Match Quiz</button>
                 <button id="browseCoffees" class="font-Days_One  m-4 p-3 text-center rounded-lg border-[#592b1f] bg-slate-100 hover:bg-[#e97451] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Browse Our Coffees</button>
             </div>
             
         </div>
     </div>
-    <div>
-        <h2 class="font-sans text-center mt-5 text-lg"> Hi there, First up, how do you make your coffee</h2>
-        <div class="flex flex-wrap justify-center">
-            <div class="coffeeCards">
-                <img class="w-24" src="<%=require('./coffee-machine.png')%>" alt="">
-                <p class="font-Days_One mt-4">Nespresso</p>
-            </div>
-            <div class="coffeeCards">
-                <img class="w-24" src="<%=require('./moka-pot.png')%>" alt="">
-                <p class="font-Days_One mt-4">Moka Pot</p>
-            </div>
-        </div>
+    <div id="coffeeQuizContainer">
+
     </div>
 </body>
 </html>

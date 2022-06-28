@@ -8,9 +8,10 @@ module.exports = {
 
   // Path to your entry point. From this file Webpack will begin its work
   entry: './src/index.js',
-
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
+      inject: false,
       filename: "index.html",
       template: 'src/index.html' 
   })

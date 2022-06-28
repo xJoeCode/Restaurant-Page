@@ -1,14 +1,14 @@
 console.log("running 2 index.js")
 import  './styles.css'
-//import coffeeMachine from './Assets/coffee-machine.png/'
+import {coffeeQuiz} from './moduleCoffeeQuiz.js'
 
-const main = (()=>{
-    const main = document.querySelector("#content")
-    main.classList.add("bg-lightblue")
+
+const main = ()=>{
+    console.log("running")
     const coffeeMain = document.querySelector("#quiz")
-    //coffeeMain.setAttribute("onclick". "")
+    coffeeMain.onclick = function() {coffeeQuiz()}
 
-    const coffeequiz = () =>{
+}
 
-    }
-})()
+
+main()
