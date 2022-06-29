@@ -5,8 +5,14 @@ import frenchpress from './Assets/french-press.png'
 const coffeeQuiz = () => {
     console.log("creating quiz")
     const coffeeQuizContainer = document.getElementById("coffeeQuizContainer");
+    
+    while(coffeeQuizContainer.hasChildNodes()){
+        coffeeQuizContainer.removeChild(coffeeQuizContainer.lastChild)
+    }
+    
+    coffeeQuizContainer.setAttribute("class", "rounded-lg md:bg-[#8eb0bc] container m-auto mt-4 p-8 h-1/2")
     const headertext = document.createElement("h2");
-    headertext.setAttribute("class","font-sans text-center mt-5 text-lg");
+    headertext.setAttribute("class","font-Days_One text-center mt-5 text-lg");
     headertext.textContent = "Hi there, First up, how do you make your coffee"
     coffeeQuizContainer.appendChild(headertext)
     const coffeeCardsWrapper = document.createElement("div")

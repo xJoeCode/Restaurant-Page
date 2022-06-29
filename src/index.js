@@ -1,7 +1,7 @@
 console.log("running 2 index.js")
 import  './styles.css'
 import {coffeeQuiz} from './moduleCoffeeQuiz.js'
-import {coffeeCard} from './coffeeCataolgue.js'
+import {coffeeCard} from './moduleCoffeeCataolgue.js'
 
 
 const main = ()=>{
@@ -10,7 +10,6 @@ const main = ()=>{
     coffeeQuizer.onclick = function() {coffeeQuiz()}
     const coffeeCataolgue = document.querySelector("#browseCoffees")
     coffeeCataolgue.onclick = function(){coffeeCard()}
-
 }
 
 
