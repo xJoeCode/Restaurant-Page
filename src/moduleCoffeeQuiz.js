@@ -2,7 +2,10 @@ import coffeeMachine from './Assets/coffee-machine.png'
 import mokaport from './Assets/moka-pot.png'
 import frenchpress from './Assets/french-press.png'
 
+let questionArray = []
+
 const coffeeQuiz = () => {
+    
     console.log("creating quiz")
     const coffeeQuizContainer = document.getElementById("coffeeQuizContainer");
     
@@ -16,12 +19,13 @@ const coffeeQuiz = () => {
     headertext.textContent = "Hi there, First up, how do you make your coffee"
     coffeeQuizContainer.appendChild(headertext)
     const coffeeCardsWrapper = document.createElement("div")
-    coffeeCardsWrapper.setAttribute("class","flex flex-wrap justify-center");
+    coffeeCardsWrapper.setAttribute("class"," flex flex-wrap justify-center");
     coffeeQuizContainer.appendChild(coffeeCardsWrapper)
 
     //create nespressocard
     const NespressoContainer = document.createElement("div")
     NespressoContainer.setAttribute("class","coffeeCards");
+    NespressoContainer.setAttribute("data-id","Nespresso")
     coffeeCardsWrapper.appendChild(NespressoContainer)
     const nespressoImage = document.createElement("img")
     nespressoImage.setAttribute("class","w-24");
@@ -35,6 +39,7 @@ const coffeeQuiz = () => {
     //create mokapotCard
     const mokaPotContainer = document.createElement("div")
     mokaPotContainer.setAttribute("class","coffeeCards");
+    mokaPotContainer.setAttribute("data-id","MokaPot")
     coffeeCardsWrapper.appendChild(mokaPotContainer)
     const mokaPotImage = document.createElement("img")
     mokaPotImage.setAttribute("class","w-24");
@@ -48,6 +53,7 @@ const coffeeQuiz = () => {
     //create frenchPressCard
     const frenchPressContainer = document.createElement("div")
     frenchPressContainer.setAttribute("class","coffeeCards");
+    frenchPressContainer.setAttribute("data-id","FrenchPress")
     coffeeCardsWrapper.appendChild(frenchPressContainer)
     const frenchPressImage = document.createElement("img")
     frenchPressImage.setAttribute("class","w-24");
@@ -57,7 +63,17 @@ const coffeeQuiz = () => {
     frenchPressText.textContent = "Frenchpress"
     frenchPressText.setAttribute("class","font-Days_One mt-4");
     frenchPressContainer.appendChild(frenchPressText)
+
+    
+} 
+
+const roastProfileQn = () => {
+    console.log(coffeeQuizContainer)
+    
+    while(coffeeQuizContainer.hasChildNodes()){
+        coffeeQuizContainer.removeChild(coffeeQuizContainer.lastChild)
+    }
 }
 
 
-export{coffeeQuiz}
+export{coffeeQuiz, roastProfileQn}

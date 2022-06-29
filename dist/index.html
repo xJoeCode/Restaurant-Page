@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
-<body id="content" class="background bg-lightblue ">
+<body id="content" class="background bg-lightblue h-screen ">
     <div class="flex flex-col items-center">
         <h1 class="relative container text-3xl font-Days_One p-3 cursor-pointer">Wolf Coffee</h1>
-        <div class="container w-4/6 h-48 bg-anotherGreen flex flex-col items-center justify-center text-center m-3 rounded-lg  ">
-            <h1 class="font-Days_One  m-3 tracking-tight">THE WIDEST RANGE OF COFFEES FROM THE WORLD'S BEST FARMS</h1>
-            <p class="font-Days_One  ">Fresh, delicious & affordable coffees conveniently delivered to you!</p>
-            <div class="container flex flex-col md:flex-row justify-center">
-                <button id="quiz" onclick="coffeeQuiz()" class="font-Days_One  m-4 p-3 text-center rounded-lg border-[#592b1f] bg-slate-100 hover:bg-[#e97451] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Try Our Coffee Match Quiz</button>
-                <button id="browseCoffees" class="font-Days_One  m-4 p-3 text-center rounded-lg border-[#592b1f] bg-slate-100 hover:bg-[#e97451] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Browse Our Coffees</button>
+        <div class="container w-4/6 h-auto py-6 bg-anotherGreen flex flex-col items-center justify-center text-center m-3 rounded-lg  ">
+            <h1 class="font-Days_One text-gray-50 text-2xl  m-3 tracking-tight">THE WIDEST RANGE OF COFFEES FROM THE WORLD'S BEST FARMS</h1>
+            <p class="font-Days_One text-gray-50  ">Fresh, delicious & affordable coffees conveniently delivered to you!</p>
+            <div class="container flex flex-col items-center md:flex-row justify-center">
+                <button id="quiz" onclick="coffeeQuiz()" class="font-Days_One  m-4 p-3 mw-72 h-14 flex items-center justify-center rounded-lg border-[#592b1f] bg-veryLightBlue hover:bg-[#e1bfb4] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Try Our Coffee Match Quiz</button>
+                <button id="browseCoffees" class="font-Days_One m-4 p-3 mw-72 h-14 flex items-center justify-center rounded-lg border-[#592b1f] bg-veryLightBlue hover:bg-[#e1bfb4] hover:-translate-y-1 ease-in-out duration-300 hover:border-b-8"> Browse Our Coffees</button>
             </div>
             
         </div>
     </div>
+    
     <div id="coffeeQuizContainer">
-
+          
     </div>
 </body>
 </html>
