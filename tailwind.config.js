@@ -19,7 +19,7 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
         lightblue: '#add8e6',
-        anotherGreen: '#5e8c31',
+        anotherGreen: '#384448',
       },
       fontFamily:{
         Days_One:['Days One', 'sans-serif']

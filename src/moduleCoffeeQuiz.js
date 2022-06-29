@@ -1,6 +1,6 @@
-import coffeeMachine from './coffee-machine.png'
-import mokaport from './moka-pot.png'
-import frenchpress from './french-press.png'
+import coffeeMachine from './Assets/coffee-machine.png'
+import mokaport from './Assets/moka-pot.png'
+import frenchpress from './Assets/french-press.png'
 
 const coffeeQuiz = () => {
     console.log("creating quiz")
