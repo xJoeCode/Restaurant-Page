@@ -6,21 +6,21 @@ const coffeeCard = () => {
     while(catalogueContainer.hasChildNodes()){
         catalogueContainer.removeChild(catalogueContainer.lastChild)
     }
-    catalogueContainer.setAttribute("class", "rounded-lg md:bg-[#8eb0bc] container m-auto mt-4 p-8 h-1/2")
+    catalogueContainer.setAttribute("class", "rounded-lg md:bg-[#8eb0bc] container m-auto mt-4 p-8 ")
     const coffeeHeader = document.createElement("h2")
     coffeeHeader.textContent = "Our Coffees"
     coffeeHeader.setAttribute("class","font-Days_One text-center text-3xl")
     catalogueContainer.appendChild(coffeeHeader)
 
     const coffeeCardContainer = document.createElement("div")
-    coffeeCardContainer.setAttribute("class","flex flex-wrap justify-center items-center mt-4")
+    coffeeCardContainer.setAttribute("class","  flex flex-wrap justify-center items-center mt-4")
     catalogueContainer.appendChild(coffeeCardContainer)
     for(let i = 0; i < 3; i++){
         const card = document.createElement("div")
         card.classList.add("catalogueCards")
         coffeeCardContainer.appendChild(card)
         const coffeeImage = document.createElement("img")
-        coffeeImage.classList.add("w-24")
+        coffeeImage.setAttribute("class","w-20 hidden md:block")
         coffeeImage.src = coffeebean
         card.appendChild(coffeeImage)
 

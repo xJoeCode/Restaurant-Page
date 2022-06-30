@@ -11,8 +11,9 @@ module.exports = {
     extend: {
       colors:{
         veryLightBlue: '#c9e5ee',
-        lightblue: '#add8e6',
+        lightblue: '#bcd4e6',
         anotherGreen: '#384448',
+        lightBrown: '#e3ccb0',
       },
       fontFamily:{
         Days_One:['Days One', 'sans-serif']
