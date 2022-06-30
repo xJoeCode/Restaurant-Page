@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant Page</title>
+        <script defer src="./bundle.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet" />
+    </head>
+    <body id="content" class="background h-screen bg-lightblue">
+        <div class="flex flex-col items-center">
+            <h1 class="container relative cursor-pointer p-3 font-Days_One text-3xl">Wolf Coffee</h1>
+            <div class="container m-3 flex h-auto w-4/6 flex-col items-center justify-center rounded-lg bg-anotherGreen py-6 text-center">
+                <h1 class="m-3 font-Days_One text-2xl tracking-tight text-gray-50">
+                    THE WIDEST RANGE OF COFFEES FROM THE WORLD'S BEST FARMS
+                </h1>
+                <p class="font-Days_One text-gray-50">Fresh, delicious & affordable coffees conveniently delivered to you!</p>
+                <div class="container flex flex-col items-center justify-center md:flex-row">
+                    <button
+                        id="quiz"
+                        onclick="coffeeQuiz()"
+                        class="mw-72 m-4 flex h-14 items-center justify-center rounded-lg border-[#592b1f] bg-veryLightBlue p-3 font-Days_One duration-300 ease-in-out hover:-translate-y-1 hover:border-b-8 hover:bg-[#e1bfb4]"
+                    >
+                        Try Our Coffee Match Quiz
+                    </button>
+                    <button
+                        id="browseCoffees"
+                        class="mw-72 m-4 flex h-14 items-center justify-center rounded-lg border-[#592b1f] bg-veryLightBlue p-3 font-Days_One duration-300 ease-in-out hover:-translate-y-1 hover:border-b-8 hover:bg-[#e1bfb4]"
+                    >
+                        Browse Our Coffees
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="" id="coffeeQuizContainer"></div>
+        <div class="flex flex-col items-center text-center">
+            <h1 class="mt-6 font-Days_One text-3xl">3 reasons to try Wolf Coffee</h1>
+            <div class="container m-4 grid w-3/5 rounded-xl bg-lightBrown shadow-l md:grid-cols-[1fr_5fr]">
+                <img class="relative m-auto hidden w-3/4 p-4 md:block" src="<%=require('./Assets/sprout.png')%>" alt="" />
+                <div class="m-3 bg-white">
+                    <h3 class="m-3 font-Days_One text-lg">QUALITY & FRESHNESS</h3>
+                    <p class="m-3 font-Days_One text-base">
+                        We source the world's best coffees and ship your coffee within 7 days of roasting. Freshness guaranteed. Further,
+                        with our wide variety, we promise you'll never get bored.
+                    </p>
+                </div>
+            </div>
+            <div class="container m-4 grid w-3/5 rounded-xl bg-lightBrown shadow-l md:grid-cols-[1fr_5fr]">
+                <img class="relative m-auto hidden w-3/4 p-4 md:block" src="<%=require('./Assets/tree.png')%>" alt="" />
+                <div class="m-3 bg-white">
+                    <h3 class="m-3 font-Days_One text-lg">SAVE MONEY</h3>
+                    <p class="m-3 font-Days_One text-base">
+                        Save money while getting your caffeine fix by brewing your own cup of joe. You don't have to be a barista to make
+                        great coffee.
+                    </p>
+                </div>
+            </div>
+            <div class="container m-4 mb-8 grid w-3/5 rounded-xl bg-lightBrown shadow-l md:grid-cols-[1fr_5fr]">
+                <img class="relative m-auto hidden w-3/4 p-4 md:block" src="<%=require('./Assets/mail.png')%>" alt="" />
+                <div class="m-3 bg-white">
+                    <h3 class="m-3 font-Days_One text-lg">CONVENIENCE</h3>
+                    <p class="m-3 font-Days_One text-base">
+                        We get it, life can be hectic. We help by delivering fresh coffees to your mailbox. Just tell us what you'd like and
+                        how often.
+                    </p>
+                </div>
+            </div>
+            <a class="font-sans text-xs underline" href="https://www.flaticon.com/free-icons/mailbox" title="mailbox icons">Mailbox icons created by Smashicons - Flaticon</a>
+            <a class="font-sans text-xs underline" href="https://www.flaticon.com/free-icons/coffee-bean" title="coffee bean icons">Coffee bean icons created by small.smiles - Flaticon</a>
+        </div>
+    </body>
+</html>
