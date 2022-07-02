@@ -15,7 +15,7 @@
     hover:bg-[#d3b6dd] ease-in-out duration-300
     }
 .questionCards1{
-    @apply font-Days_One cursor-pointer rounded-lg p-4 bg-[#e3ccb0] m-4 hover:bg-[#d3b6dd] ease-in-out duration-300
+    @apply font-Days_One w-36 h-16 grid shadow-xl place-content-center text-center cursor-pointer rounded-lg p-4 bg-[#e3ccb0] m-4 hover:bg-[#d3b6dd] ease-in-out duration-300
 }
 
 }
